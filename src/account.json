@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Account",
+    "description": "each doc in the Account collection will represent an individual account. used for logins and displayname.",
+    "type": "object",
+    "required": ["email", "hashpass", "name", "bio"],
+    "additionalProperties": false,
+    "properties": {
+        "email": {
+            "type": "string",
+            "description": "the email of the user"
+        },
+        "hashpass": {
+            "type": "string",
+            "description": "the hashed password of the user"
+        },
+        "name": {
+            "type": "string",
+            "description": "the display name of the user"
+        },
+        "bio": {
+            "type": "string",
+            "description": "any information about the user that the user wants to display"
+        },
+        "picture": {
+            "type": "string",
+            "description": "the file name of the user's profile picture"
+        }
+    }
+}
